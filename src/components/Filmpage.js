@@ -38,6 +38,7 @@ function Filmpage()
             set_imgpath(f.poster_path);
             set_date(new Date(f.release_date).getFullYear())
         }
+       // eslint-disable-next-line react-hooks/exhaustive-deps 
     },[])
     useEffect(()=>
     {

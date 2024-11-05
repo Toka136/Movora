@@ -22,6 +22,7 @@ function Homepage()
         const filmt=state.filter((x)=>parseInt(x.id)===parseInt(idt));
       
         setfilm(filmt[0]);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     },[id])
     return(
         <>

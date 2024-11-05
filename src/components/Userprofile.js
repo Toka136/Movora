@@ -27,6 +27,7 @@ function Userprofile()
         const filmt=state.filter((x)=>parseInt(x.id)===parseInt(idt));
         console.log("filmt",filmt);
         setfilm(filmt[0]);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     },[id])
      const users=useSelector(state=>state.Users.Users);
      let state =useSelector(state=>state.Users.filmreducer);
@@ -45,6 +46,7 @@ function Userprofile()
         }
         }
         fun();
+      // eslint-disable-next-line react-hooks/exhaustive-deps  
     },[])
     useEffect(()=>
     {
@@ -59,6 +61,7 @@ function Userprofile()
         }
       }
       fun();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     function cahngepass()
     {
@@ -103,6 +106,7 @@ function Userprofile()
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
     return(
         <>

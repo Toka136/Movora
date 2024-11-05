@@ -44,6 +44,7 @@ function Headbar()
                 setusername("Admin");
             }
         }
+       // eslint-disable-next-line react-hooks/exhaustive-deps 
     },[location])
      function logout()
      {
@@ -79,13 +80,13 @@ function Headbar()
             <NavLink to="/" className="animationwotd"> <AnimationWord word="movora"/></NavLink>
             {/* <h1>movora</h1> */}
             <div className={user_flag&&"userlist"}>
-            {user_flag?<   a  className="linkapp" onClick={(()=>setlist(!list))}>Hello {username} <i class="fa-solid fa-angle-down"></i> </a>:<NavLink to='/signin' className="linkapp">sign in </NavLink>}
+            {user_flag?<button className="linkapp no_outline" onClick={(()=>setlist(!list))}>Hello {username} <i class="fa-solid fa-angle-down"></i> </button>:<NavLink to='/signin' className="linkapp">sign in </NavLink>}
             {list&&user_flag?<ul>
                 <li>
                     {/* {admin_flag} */}
                    {admin_flag?<NavLink onClick={(()=>setlist(!list))} to='/addfilmpage'>add film</NavLink>:<NavLink to='/userprofile' onClick={(()=>setlist(!list))}>profile</NavLink>} 
                 </li>
-                <li onClick={(()=>{logout();})}><a>log out</a></li>
+                <li onClick={(()=>{logout();})} className="cursor">log out</li>
             </ul>:null}</div>
         </div>
          {user_flag?<div className="searchdiv">

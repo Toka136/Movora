@@ -181,6 +181,15 @@
     font-size: 17px;
     color: #a8070f;
 }
+.headbar .cursor
+{
+    cursor: pointer;
+}
+.headbar .no_outline
+{
+    outline: none;
+    border: none;
+}
 .searchdiv form button
 {
     background-color: transparent;

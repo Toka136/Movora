@@ -31,6 +31,7 @@ function Film(prop)
            
            }
         fun();
+         // eslint-disable-next-line react-hooks/exhaustive-deps
         },[])
     const imgpath=prop.film.poster_path;
     const path="https://image.tmdb.org/t/p/w500";

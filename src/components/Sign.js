@@ -1,7 +1,7 @@
 import {  useState } from "react"
 import { NavLink, useNavigate } from "react-router-dom";
 import './Sign.css'
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import Alert from '@mui/material/Alert';
 
 function Signin()
@@ -10,10 +10,10 @@ function Signin()
     const[password,setpassword]=useState();
     const[count,setcount]=useState(0);
     const[type,settype]=useState('user');
-    const [user_p,set_user_p]=useState("Your user name ");
-    const [user_p_p,set_user_p_p]=useState("Your paswword");
-    const [admin_p_p,set_admin_p_p]=useState("Your paswword (admin)");
-    const [admin_p,set_admin_p]=useState("Your user name (admin)");
+    const user_p=("Your user name ");
+    const user_p_p=("Your paswword");
+    const admin_p_p="Your paswword (admin)";
+    const admin_p="Your user name (admin)";
     const[check_flag,setcheck_flag]=useState(true);
     const users=useSelector(state=>state.Users.Users);
     // const dispatch=useDispatch();

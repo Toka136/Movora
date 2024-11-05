@@ -34,17 +34,19 @@ function Topfilms()
       }
      }
      fun();
-        
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     useEffect(()=>
      {
           if(state)
           sort();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
      },[state])
       useEffect(()=>
      {
           if(state)
           sort();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
      },[state])
      const [screen,setscreen]=useState(false);
      const [Sscreen,setSscreen]=useState(false);
@@ -60,6 +62,7 @@ function Topfilms()
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
     
     return(
