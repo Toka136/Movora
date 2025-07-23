@@ -1,0 +1,82 @@
+.film img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.film_x .xicon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+}
+.film_x .xicon button
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    z-index: 4;
+}
+.film_x
+{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+.film:hover
+{
+    transform: scale(1.1);
+    transition: .5;
+}
+.film p
+{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    color: white;
+    font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 22px;
+}
+.film span
+{
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.filmlist
+{
+    width: 80%;
+    margin: 0px 10% 0 ;
+    padding: 5px;
+    /* z-index: -3; */
+    padding-bottom: 30px;
+}
+.filmlistP
+{
+    background-color: black;
+}
+.swiper-button-prev, .swiper-button-next{
+    color: #a8070f !important;
+    font-size: 50px !important;
+}
+
+@media(max-width:426px)
+{
+    .filmlist
+{
+    width: 90%;
+    margin-left: 5%;
+}
+
+}

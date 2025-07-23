@@ -1,0 +1,148 @@
+.filminfo
+{
+    border-radius: 10px;
+     top:100px;
+    left: 100px;
+    max-height: 80vh; 
+ overflow-y: auto; 
+
+      /* overflow-x: scroll; */
+   position: fixed;
+   background-color: transparent;
+    z-index: 5;
+    width: 60%;
+    margin-left: 15%;
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  
+}
+.filminfo .info
+{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+.filminfo .info span
+{
+    background-color: #414141;
+    color: #b6b5b5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-left: 5%;
+}
+.filminfo img
+{
+    width: 100%;
+}
+.filminfo p
+{
+    font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 90%;
+  margin-left: 5%;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+.filminfo button
+{
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filminfo .linkapp i{
+    font-size: 18px;
+    animation-name:arrow_animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin-left: 5px;
+}
+@keyframes arrow_animation{
+    0%{transform: translateX(0px);}
+    50%{transform: translateX(10px);}
+    60%{transform: translateX(10px);}
+    100%{transform: translateX(0px);}
+}
+.xicon
+{
+    display: flex;
+    justify-content: end;
+    margin: 5px 10px  0 0;
+    
+}
+.xicon i
+{
+    font-size: 25px;
+    cursor: pointer;
+     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.xicon a
+{
+    color: white;
+    text-decoration: none;
+}
+.xicon i:hover
+{
+    background-color: #414141ac;
+}
+.color
+{
+    width: 100%;
+    height: 40px;
+    background:linear-gradient( to right , black , #0b1128 20% , black 80%)
+}
+.linkapp a
+{
+    color: white;
+    text-decoration: none;
+}
+@media(max-width:769px)
+{
+    .filminfo
+    {
+        max-height: 77vh;
+    }
+}
+@media(max-width:426px)
+{
+    .filminfo
+    {
+        width: 100%;
+        margin-left: 0%;
+        left: 0;
+    }
+}
+@media(max-width:376px)
+{
+    .filminfo p
+    {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .filminfo
+    {
+        max-height: 72vh;
+        padding-bottom: 10px;
+    }
+}
+

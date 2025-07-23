@@ -1,0 +1,151 @@
+.signin
+{
+     background:url('/public/movie-background-collage.jpg') no-repeat;
+    padding: 5px;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.signincont
+{
+    width: 50%;
+    margin-left: 25%;
+    position: relative;
+    margin-top: 80px;
+    background-color: #1516168f;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.signincont h1
+{
+      color: white;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: capitalize;
+    height: 100;
+}
+.signincont p
+{
+      color: white;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 0;
+    font-size: 22px;
+}
+.signincont p a
+{
+    color: #d31d26;
+    cursor: pointer;
+}
+.signincont p a:hover
+{
+    color: #a8070f;
+}
+.signincont form
+{
+    border-radius: 10px;
+    padding: 10px;
+    /* border: 1px solid #fa541c  ; */
+   height: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 70px;
+}
+.signincont form input
+{
+    width: 70%;
+    /* margin-left: 5%; */
+    border: 1px solid #bdbab5;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    background:linear-gradient(to right ,#2c3440,#1e2a3c);
+    color: white;
+    outline: none;
+}
+.signincont form input::placeholder
+{
+    color: #bdbab5;
+    /* text-transform: capitalize; */
+}
+.signincont form select
+{
+    display: block;
+    margin-top: 20px;
+    /* margin-left: 21px; */
+    padding:15px;
+    background:linear-gradient(to right ,#2c3440,#1e2a3c);
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 10px;
+   color: #bdbab5;
+    width: 76%;
+    outline: none;
+}
+/* .signincont form select:nth-child(3)
+{
+    margin: 0;
+} */
+/* .signincont label
+{
+    margin-top: 10px;
+    text-align: start;
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    width: 70%;
+     font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 10px;
+} */
+.signincont button
+{
+    margin-left: 0 !important;
+    margin-top: 30px;
+    border: none;
+    width: 50%;
+}
+@media(max-width:426px)
+{
+    .signincont
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .signincont form select
+    {
+        width: 81%;
+    }
+}
+@media(max-width:376px)
+{
+    .signincont
+    {
+        width: 85%;
+        margin-left: 7%;
+    }
+    .signincont form select
+    {
+        width: 83%;
+    }
+}
+@media(max-width:321px)
+{
+    .signincont
+    {
+        width: 95%;
+        margin-left: -1%;
+    }
+    .signincont form select
+    {
+        width: 85%;
+    }
+}

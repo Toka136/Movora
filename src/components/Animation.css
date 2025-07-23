@@ -1,0 +1,47 @@
+.char
+{
+    display: inline-block;
+    animation-name: up_down;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    color: #a8070f;
+    text-transform: uppercase;
+    margin-left: 2px;
+    font-size: 40px;
+    font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+@keyframes up_down {
+  0%   { transform: translateY(0px); }
+  30%  { transform: translateY(-5px); }
+  60%  { transform: translateY(0px); }
+  100% { transform: translateY(5px); }
+}
+.animteword
+{
+    display: inline-block;
+}
+@media (max-width:426px)
+{
+
+  .char
+  {
+    font-size: 33px;
+  }
+
+}
+@media (max-width:321px)
+{
+
+  .char
+  {
+    font-size: 28px;
+  }
+
+}

@@ -1,0 +1,140 @@
+.userprofile
+{
+    background:black;
+}
+.userprofile .user_i_p
+{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-left: 2%;
+    grid-template-columns: 30% 60%;
+    padding: 1px;
+    padding-bottom: 40px;
+}
+.userprofile .user_i_p .userinfo,
+.change_p form
+{
+        background-color: #181d23de;
+    /* background:linear-gradient( to right , black , #0b1128 20% , black 80%); */
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+     font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+
+}
+.userprofile .user_i_p .userinfo p
+{
+    color: white;
+}
+.userprofile .user_i_p .userinfo span
+{
+    text-transform: capitalize;
+  color: #bdbab5;
+  margin-right: 5px;
+}
+.change_p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.change_p form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+   
+  width: 60%;
+}
+.change_p form input
+{
+width: 50%;
+    /* margin-left: 5%; */
+    border: 1px solid #bdbab5;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    background:linear-gradient(to right ,#2c3440,#1e2a3c);
+    color: white;
+    outline: none;
+}
+.change_p form input::placeholder
+{
+    color: #bdbab5;
+    text-transform: capitalize;
+}
+.change_p form button
+{
+    margin-top: 20px;
+    width: 50%;
+    /* margin-left: 20%; */
+    border: none;
+    outline: none;
+}
+h1
+{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    text-transform: capitalize;
+}
+@media(max-width:769px)
+{
+    .change_p form input
+   {
+        width: 70%;
+    }
+     .change_p form button 
+     {
+        width: 80%;
+     }
+     .userprofile .user_i_p
+     {
+        grid-template-columns: 40% 60%;
+     }
+}
+@media(max-width:426px)
+{
+ .userprofile .user_i_p
+     {
+        grid-template-columns: 70%;
+        justify-content: center;
+     }
+     .change_p form
+     {
+        width: 90%;
+     }
+}
+@media(max-width:376px)
+{
+ .userprofile .user_i_p
+     {
+        grid-template-columns: 90%;
+        justify-content: center;
+     }
+      .change_p form
+     {
+        width: 100%;
+        margin-left: 0;
+     }
+    }
+@media(max-width:321px)
+{
+ .userprofile .user_i_p
+     {
+        grid-template-columns: 98%;
+        justify-content: center;
+     }
+      .change_p form
+     {
+        width: 100%;
+        margin-left: 0;
+     }
+    }

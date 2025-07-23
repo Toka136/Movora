@@ -1,0 +1,216 @@
+.film_poster
+{
+    padding: 5px;
+    background-color: black;
+}
+.film_poster img
+{
+    width: 100%;
+}
+.filmcont
+{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    justify-content: space-between;
+    align-items: center;
+       background-color: black;
+}
+.filmcont .info
+{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+}
+.filmcont .info span
+{
+    background-color: #414141;
+    color: #b6b5b5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-left: 5%;
+}
+.filmcont .info-brief p
+{
+    font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 90%;
+  margin-left: 5%;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #b6b5b5;
+}
+.adminfilm
+{
+    margin-top: 40px;
+    position: relative;
+}
+.adminfilm button
+{
+    
+    outline: none;
+    border: none;
+}
+.check_delete
+{
+    position: absolute;
+    top: 52px;
+    left: 12px;
+    background-color:#222;
+    border-radius: 5px;
+    padding: 10px;
+}
+.check_delete p
+{
+    color: white;
+    text-align: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+.check_delete .buttons
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.check_delete .buttons button
+{
+    outline: none;
+    border: none;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+     background-color: white;
+     cursor: pointer;
+     font-size: 18px;
+     text-transform: capitalize;
+}
+.check_delete .buttons button:nth-child(1)
+{
+   
+    color: #a8070f;
+}
+.check_delete .buttons button:nth-child(2)
+{
+    color:#0b1128
+}
+.userfilm
+{
+    margin-top: 20px;
+}
+.userfilm form
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #222;
+    margin-left: 20px;
+}
+.userfilm form input
+{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    width: 50%;
+}
+.userfilm form input::placeholder
+{
+    color: white;
+}
+.userfilm >button
+{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.userfilm form button
+{
+    outline: none;
+    border: none;
+}
+ .filmbuttons .linkapp
+    {
+        outline: none;
+        border: none;
+    }
+    .filmbuttons
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px 0  30px 0;
+    }
+@media(max-width:769px)
+{
+    .filmcont{
+        display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 10px;
+    }
+    /* .filmcont .linkapp
+    {
+        display: inline;
+    } */
+    .userfilm form
+    {
+        width: 40%;
+    }
+    .film_poster
+    {
+        width: 95%;
+    }
+    
+   
+  
+}
+@media(max-width:426px)
+{
+.userfilm form
+    {
+        width: 60%;
+    }
+    .film_poster
+    {
+        width: 95%;
+    }
+}
+
+@media(max-width:376px)
+{
+.userfilm form
+    {
+        width: 80%;
+    }
+  
+    .filmbuttons
+    {
+        flex-direction: column;
+        align-items: start;
+        margin-left: 5px;
+    }
+    .filmbuttons .linkapp
+    {
+        margin-bottom: 20px;
+    }
+        .filmcont .info-brief p
+    {
+        font-size: 14px;
+    }
+}

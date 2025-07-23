@@ -1,0 +1,117 @@
+.join
+{
+    background-color: black;
+    padding: 5px;
+}
+.joincont
+{
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.joincont h1
+{
+    color: white;
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: capitalize;
+}
+.joincont .reasons
+{
+    display:grid;
+    grid-template-columns: repeat(4,23%);
+    justify-content: space-between;
+    align-items: center;
+}
+.joincont .reasons >div
+{
+    background:linear-gradient(to bottom right,#1c1b37,#1f1424,#210f19);
+    border-radius: 10px;
+    padding: 10px;
+    /* height: 300px; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.joincont .reasons>div h1
+{
+    color: white;
+    text-transform: capitalize;
+     font-family: cursive;
+   
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 22px;
+}
+.joincont .reasons>div p
+{
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #b5b5be;
+    margin-top: 20px;
+     font-family: "Winky Rough", sans-serif;
+}
+.joincont .reasons>div .icon
+{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 40px;
+
+}
+.joincont .reasons>div .icon i
+{
+    font-size: 40px;
+    color: #af131b;
+}
+@media(max-width:768px)
+{
+    .joincont .reasons
+    {
+        grid-template-columns: repeat(2,47%);
+        justify-content: space-around;
+        row-gap: 20px;
+    }
+}
+@media(max-width:426px)
+{
+    .joincont .reasons
+    {
+        grid-template-columns:80%;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+@media(max-width:376px)
+{
+    .joincont h1
+    {
+        font-size: 30px;
+        text-align: center;
+    }
+    .joincont{
+        width: 99%;
+        margin-left: .5%;
+    }
+    .joincont .reasons
+    {
+        grid-template-columns:90%;
+      
+    }
+}
+@media(max-width:321px)
+{
+    .joincont h1
+    {
+        font-size: 25px;
+      
+    }
+    
+    .joincont .reasons
+    {
+        grid-template-columns:95%;
+      
+    }
+}
