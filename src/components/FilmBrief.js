@@ -33,7 +33,7 @@ useEffect(()=>
     const x=languages.find((f)=>f.code===prop.film.original_language);
     if(x)
         set_code(x.name);
-},)
+},[])
      useEffect(()=>
     {
         const i=localStorage.getItem("id");

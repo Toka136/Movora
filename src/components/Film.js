@@ -26,7 +26,7 @@ function Film(prop)
                 const u=users.find((x)=>(x)=>parseInt(x.id)===parseInt(id));
                 set_user(u);
             }
-        },)
+        },[])
     const imgpath=prop.film.poster_path;
     const path="https://image.tmdb.org/t/p/w500";
     const allpath=`${path}${imgpath}`

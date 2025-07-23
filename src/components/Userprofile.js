@@ -41,7 +41,7 @@ function Userprofile()
             set_user(u);
          
         }
-    },)
+    },[])
     useEffect(()=>
     {
        const id =localStorage.getItem("id");
@@ -51,7 +51,7 @@ function Userprofile()
             set_user(u);
             
         }
-    },)
+    },[])
     function cahngepass()
     {
         console.log(user);
@@ -95,7 +95,7 @@ function Userprofile()
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, );
+  }, []);
     return(
         <>
         {user&&<div className="userprofile">

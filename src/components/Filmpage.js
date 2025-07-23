@@ -38,7 +38,7 @@ function Filmpage()
             set_imgpath(f.poster_path);
             set_date(new Date(f.release_date).getFullYear())
         }
-    },)
+    },[])
     useEffect(()=>
     {
         const t=localStorage.getItem("admin");
@@ -49,7 +49,7 @@ function Filmpage()
                  setadmin_flag(true);
                 // setusername("Admin");
             }
-    },)
+    },[])
     function ratefilm()
     {
         const i=localStorage.getItem("id");

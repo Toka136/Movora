@@ -31,7 +31,7 @@ function Topfilms()
          localStorage.setItem("apiflag","true");
       }
         
-    },)
+    },[])
     useEffect(()=>
      {
           if(state)
@@ -56,7 +56,7 @@ function Topfilms()
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, );
+  }, []);
     
     return(
       <div className="filmlistP">
