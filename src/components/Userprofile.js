@@ -16,7 +16,6 @@ function Userprofile()
     const [C_pass,set_C_pass]=useState(null);
     const [N_pass,set_N_pass]=useState(null);
     const [F_pass,set_F_pass]=useState();
-    const [f_list,set_f_list]=useState();
     const [passflag,set_passflag]=useState(false);
     const id=useParams();
      const [film,setfilm]=useState();
@@ -40,9 +39,9 @@ function Userprofile()
         {
             const u=users.find((x)=>(x)=>parseInt(x.id)===parseInt(id));
             set_user(u);
-            set_f_list(u.filmslist);
+         
         }
-    },[])
+    },)
     useEffect(()=>
     {
        const id =localStorage.getItem("id");
@@ -50,9 +49,9 @@ function Userprofile()
         {
             const u=users.find((x)=>parseInt(x.id)===parseInt(id));
             set_user(u);
-              set_f_list(u.filmslist);
+            
         }
-    },[])
+    },)
     function cahngepass()
     {
         console.log(user);
@@ -96,7 +95,7 @@ function Userprofile()
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, );
     return(
         <>
         {user&&<div className="userprofile">

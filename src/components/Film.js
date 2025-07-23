@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Film.css'
-import Filmbrief from './FilmBrief';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { edituser } from '../store-api/slices/Users-slice';
@@ -27,8 +26,7 @@ function Film(prop)
                 const u=users.find((x)=>(x)=>parseInt(x.id)===parseInt(id));
                 set_user(u);
             }
-        },[])
-    // {prop.film.poster_path}
+        },)
     const imgpath=prop.film.poster_path;
     const path="https://image.tmdb.org/t/p/w500";
     const allpath=`${path}${imgpath}`
@@ -37,7 +35,7 @@ function Film(prop)
        
         let l=[...user.filmslist];
         let id=prop.film.id;
-        let listt=l.filter((x)=>parseInt(x.id)!=parseInt(id));
+        let listt=l.filter((x)=>parseInt(x.id)!==parseInt(id));
         let ut={
             ...user,
             "filmslist":listt
@@ -55,7 +53,7 @@ function Film(prop)
             filminfoshow() 
         }>
              
-            <img src={allpath}></img>
+            <img src={allpath} alt='film poster'></img>
             {!location.pathname.includes("userprofile")?<span>{prop.count+1}</span>:null}
         </div>
         </div>

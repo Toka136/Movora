@@ -7,7 +7,7 @@ function Filmbrief(prop)
 
         const location=useLocation();
         const [user_flag,setuser_flag]=useState(false);
-    const [admin_flag,setu_admin_flag]=useState(false);
+    // const [admin_flag,setu_admin_flag]=useState(false);
     const [code,set_code]=useState("unknown");
     const path="https://image.tmdb.org/t/p/w500";
     const allpath=`${path}${imgpath}`;
@@ -33,7 +33,7 @@ useEffect(()=>
     const x=languages.find((f)=>f.code===prop.film.original_language);
     if(x)
         set_code(x.name);
-},[])
+},)
      useEffect(()=>
     {
         const i=localStorage.getItem("id");
@@ -44,7 +44,7 @@ useEffect(()=>
            
             setuser_flag(true);
             
-            setu_admin_flag(false);
+           
             
            
         }
@@ -54,7 +54,7 @@ useEffect(()=>
       
             if(t==="true")
             { 
-                 setu_admin_flag(true);
+               
                  setuser_flag(true);
              
             }
@@ -67,7 +67,7 @@ useEffect(()=>
                 <NavLink to={location.pathname.includes('/userprofile')?'/userprofile':'/'}>
                 <i class="fa-solid fa-xmark"></i></NavLink>
                 </div>
-            <img src={allpath}></img>
+            <img src={allpath} alt='film poster'></img>
             <div className="info">
                 <span>{date}</span>
                 <span>{prop.film.adult?"adult":"general"}</span>

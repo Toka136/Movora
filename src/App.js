@@ -1,12 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import Headbar from './components/Headbar';
-import Topfilms from './components/TopFilms';
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux"
-// import Filmbrief from "./FilmBrief";
-import { fetchfilms } from "./store-api/slices/Films-slice";
-import Filmbrief from './components/FilmBrief';
 import Homepage from './components/Homapage';
 import { Route, Routes } from 'react-router-dom';
 import Signin from './components/Sign';

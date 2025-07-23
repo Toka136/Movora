@@ -1,19 +1,16 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import './Headbar.css'
 import AnimationWord from "./AnimationWord";
-import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import Alert from '@mui/material/Alert';
 
 function Headbar()
 {
-    const [id,setid]=useState();
     const [username,setusername]=useState();
     const [user_flag,setuser_flag]=useState(false);
     const [admin_flag,setu_admin_flag]=useState(false);
     const [notfound,setu_notfound]=useState(false);
-    const [searchbar,setu_searchbar]=useState();
      const users=useSelector(state=>state.Users.Users);
      const films=useSelector(state=>state.Users.filmreducer);
      const [list,setlist]=useState();
@@ -27,7 +24,7 @@ function Headbar()
        
         if(i>0)
         {
-            setid(parseInt(i));
+           
             setuser_flag(true);
            
             setu_admin_flag(false);

@@ -1,11 +1,9 @@
 import { useSelector } from "react-redux";
-import Headbar from "./Headbar";
 import Filmbrief from "./FilmBrief";
 import Topfilms from "./TopFilms";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import JoinReason from "./JoinReasons";
-import Question from "./Question";
 import Questions from "./Questions";
 import './Question.css'
 import Footer from "./Footer";

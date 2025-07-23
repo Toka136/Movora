@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react"
+import {  useState } from "react"
 import { NavLink, useNavigate } from "react-router-dom";
 import './Sign.css'
 import { useDispatch, useSelector } from "react-redux";
 import Alert from '@mui/material/Alert';
-import { adduser } from "../store-api/slices/Users-slice";
 
 function Signin()
 {
@@ -45,7 +44,7 @@ function Signin()
         {
             if(count<3){
                 // console.log("pass"+password);
-            const u=users.find((x)=>x.password==password&&x.username==username);
+            const u=users.find((x)=>x.password===password&&x.username===username);
             if(u)
             {
                 localStorage.setItem("id",u.id);

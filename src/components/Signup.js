@@ -1,5 +1,5 @@
 import { Alert } from "@mui/material";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { adduser } from "../store-api/slices/Users-slice";
@@ -22,7 +22,7 @@ function Signup()
             console.log("in functio");
             if(users.length>0){
                  console.log("in")
-            const u=users.find((x)=>x.username==username);
+            const u=users.find((x)=>x.username===username);
             console.log(u+"u");
             if(u)
             {

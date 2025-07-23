@@ -38,7 +38,7 @@ function Filmpage()
             set_imgpath(f.poster_path);
             set_date(new Date(f.release_date).getFullYear())
         }
-    },[])
+    },)
     useEffect(()=>
     {
         const t=localStorage.getItem("admin");
@@ -49,15 +49,15 @@ function Filmpage()
                  setadmin_flag(true);
                 // setusername("Admin");
             }
-    },[])
+    },)
     function ratefilm()
     {
         const i=localStorage.getItem("id");
         let u=users.find((x)=>(x)=>parseInt(x.id)===parseInt(i))
         let f2=u.ratingfilms.find((x)=>parseInt(x.id)===parseInt(prop.id));
-        if(!f2||f2.rating!=filmerat){
+        if(!f2||f2.rating!==filmerat){
         let f=state.find((x)=>parseInt(x.id)===parseInt(prop.id));
-      let ratingl =u.ratingfilms.filter((x)=>parseInt(x.id)!=parseInt(prop.id));
+      let ratingl =u.ratingfilms.filter((x)=>parseInt(x.id)!==parseInt(prop.id));
     
         if(f)
         {
@@ -204,7 +204,7 @@ function Filmpage()
                 </div>
                
             <div className="film_poster">
-            <img src={Object.keys(film).length>11?allpath : imgpath}/>
+            <img src={Object.keys(film).length>11?allpath : imgpath} alt="film poster"/>
             </div>
             </div>
             }

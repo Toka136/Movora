@@ -9,14 +9,12 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Navigation } from 'swiper/modules';
-import Filmbrief from "./FilmBrief";
 function Topfilms()
 {
      let state =useSelector(state=>state.Users.filmreducer);
     //  console.log(state);
     const dispatch=useDispatch();
     const [top_ten,set_top_ten]=useState([]);
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
     const sort=()=>
     {
@@ -33,7 +31,7 @@ function Topfilms()
          localStorage.setItem("apiflag","true");
       }
         
-    },[])
+    },)
     useEffect(()=>
      {
           if(state)
@@ -58,24 +56,8 @@ function Topfilms()
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
-    //  useEffect(()=>
-    // {
-    //  if( window.innerWidth<426)
-    //   {
-    //     setscreen(true);
-    //     if(window.innerWidth<376)
-    //       setSscreen(true);
-    //     else
-    //     {
-    //       setSscreen(false);
-    //     }
-    //   }
-    //   else
-    //   {
-    //     setscreen(false);
-    //   }
-    // },[window.innerWidth])
+  }, );
+    
     return(
       <div className="filmlistP">
       <div className="filmlist">  

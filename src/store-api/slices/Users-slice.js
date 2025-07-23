@@ -11,13 +11,13 @@ const User_slice=createSlice(
             },
             edituser:(state,action)=>
             {
-                state=state.filter((x)=>parseInt(x.id)!=parseInt(action.payload.id));
+                state=state.filter((x)=>parseInt(x.id)!==parseInt(action.payload.id));
                 state.push(action.payload);
                 return state
             },
             deleteuser:(state,action)=>
             {
-                state=state.filter((x)=>x.id!=action.payload);
+                state=state.filter((x)=>x.id!==action.payload);
                 return state;
             },
         }

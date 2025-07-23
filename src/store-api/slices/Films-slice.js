@@ -19,12 +19,12 @@ const filmSlice=createSlice({
         },
         deleteFilm:(state,action)=>
         {
-            state=state.filter((x)=>parseInt(x.id)!=parseInt(action.payload));
+            state=state.filter((x)=>parseInt(x.id)!==parseInt(action.payload));
             return state;
         },
          editFilm:(state,action)=>
         {
-            state=state.filter((x)=>parseInt(x.id)!=parseInt(action.payload.id));
+            state=state.filter((x)=>parseInt(x.id)!==parseInt(action.payload.id));
             state.push(action.payload);
             return state;
         },
