@@ -5,12 +5,16 @@ function Mainimg()
     const reff=useRef(null);
     useEffect(()=>
     {
-        gsap.fromTo(
+        function fun()
+        {
+            gsap.fromTo(
             reff.current,
             {y:200,opacity:0},
             {y:0,opacity:1,duration: 2.5,
         }
         );
+        }
+        fun();
     },[])
     return(
         <div className="main">

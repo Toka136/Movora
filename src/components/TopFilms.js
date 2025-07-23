@@ -25,11 +25,15 @@ function Topfilms()
     };
     useEffect(()=>
     {
-      const flag =localStorage.getItem("apiflag");
+     function fun()
+     {
+       const flag =localStorage.getItem("apiflag");
       if(!flag){
          dispatch(fetchfilms());
          localStorage.setItem("apiflag","true");
       }
+     }
+     fun();
         
     },[])
     useEffect(()=>
@@ -52,7 +56,7 @@ function Topfilms()
       setSscreen(width < 376);
     };
 
-    handleResize(); // Run once on mount
+    handleResize(); 
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);

@@ -33,7 +33,9 @@ function Userprofile()
      const dispatch=useDispatch();
     useEffect(()=>
     {
-        console.log("effect");
+        function fun()
+        {
+            console.log("effect");
         const id =localStorage.getItem("id");
         if(id)
         {
@@ -41,16 +43,22 @@ function Userprofile()
             set_user(u);
          
         }
+        }
+        fun();
     },[])
     useEffect(()=>
     {
-       const id =localStorage.getItem("id");
+      function fun()
+      {
+         const id =localStorage.getItem("id");
         if(id)
         {
             const u=users.find((x)=>parseInt(x.id)===parseInt(id));
             set_user(u);
             
         }
+      }
+      fun();
     },[])
     function cahngepass()
     {

@@ -20,12 +20,17 @@ function Film(prop)
     }
      useEffect(()=>
         {
-            const id =localStorage.getItem("id");
+           function fun()
+           {
+             const id =localStorage.getItem("id");
             if(id)
             {
                 const u=users.find((x)=>(x)=>parseInt(x.id)===parseInt(id));
                 set_user(u);
             }
+           
+           }
+        fun();
         },[])
     const imgpath=prop.film.poster_path;
     const path="https://image.tmdb.org/t/p/w500";

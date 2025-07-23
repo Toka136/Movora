@@ -30,9 +30,13 @@ function Filmbrief(prop)
 ];
 useEffect(()=>
 {
-    const x=languages.find((f)=>f.code===prop.film.original_language);
+    function fun()
+    {
+        const x=languages.find((f)=>f.code===prop.film.original_language);
     if(x)
         set_code(x.name);
+    }
+    fun();
 },[])
      useEffect(()=>
     {
